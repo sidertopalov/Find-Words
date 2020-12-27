@@ -80,7 +80,7 @@ class BoardSearch {
         }
         path.push(pos);
         let self = this;
-        this._neighboursCells.forEach(function(cords) {
+        this.#_neighboursCells.forEach(function(cords) {
             let cellPosition = [pos[0] + cords[0], pos[1] + cords[1]];
             if(self._inBoard(self._board, cellPosition[0], cellPosition[1]) && visitedPositions.containsArray(cellPosition) === -1) {
 

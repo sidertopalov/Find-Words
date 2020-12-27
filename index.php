@@ -1,7 +1,7 @@
 <?php
 set_time_limit( 0 );
 
-$bgDictionary = file_get_contents('dictionaries/bg_BG_no_duplicates.json');
+$bgDictionary = file_get_contents('dictionaries/bg/bg_BG_no_duplicates.json');
 
 $dummyMatrix = [
     ['т', 'д', 'в', 'а'],
@@ -9,8 +9,6 @@ $dummyMatrix = [
     ['е', 'б', 'и', 'ф'],
     ['к', 'р', 'и', 'ц']
 ];
-$manage = json_decode($bgWords, true);
-var_dump(json_encode($manage, JSON_PRETTY_PRINT)); die;
 
 echo '<script>';
 echo 'var bg_dictionary = ' . $bgDictionary . ';';
